@@ -14,7 +14,7 @@ namespace Settings
             var te = File.ReadAllText(path);
             if (te.Contains(key + ":") == true)
             {
-                te = te.Replace(key, "");
+                te = te.Replace(key + ":", "");
                 return te;
             }
             else
